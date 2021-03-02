@@ -14,6 +14,7 @@ keywords:
     spectrogram: 3
     partial label: 4
     transformer: 5
+    gan: 10
 
 # 通知の閾値
 score_threshold: 0
