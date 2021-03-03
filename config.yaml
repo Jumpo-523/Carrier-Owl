@@ -15,6 +15,9 @@ keywords:
     partial label: 4
     transformer: 5
     gan: 10
+    domain shift: 2
+    nlp: 3
+    partial label: 2
 
 # 通知の閾値
 score_threshold: 0
