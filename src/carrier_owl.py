@@ -151,7 +151,7 @@ def get_config() -> dict:
     file_dir = os.path.dirname(file_abs_path)
     config_path = f'{file_dir}/../config.yaml'
     with open(config_path, 'r') as yml:
-        config = yaml.load(yml)
+        config = yaml.load(yml, Loader=yaml.FullLoader)
     return config
 
 
