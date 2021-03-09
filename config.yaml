@@ -5,6 +5,7 @@ subject: 'cs'
 keywords:
     kaggle: 3
     resnet: 3
+    health: 10
     anomaly detection: 1
     sound: 1
     audio: 1
@@ -18,6 +19,8 @@ keywords:
     domain shift: 2
     nlp: 3
     partial label: 2
+    sentiment: 1
+    attention: 12
 
 # 通知の閾値
 score_threshold: 0
