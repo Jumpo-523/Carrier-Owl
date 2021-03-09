@@ -149,9 +149,11 @@ def get_text_from_page_source(html: str) -> str:
 def get_config() -> dict:
     file_abs_path = os.path.abspath(__file__)
     file_dir = os.path.dirname(file_abs_path)
-    config_path = f'{file_dir}/../config.yaml'
+    print(file_abs_path, file_dir)
+    config_path = f'../config.yaml'
     with open(config_path, 'r') as yml:
         config = yaml.load(yml, Loader=yaml.FullLoader)
+        print(config)
     return config
 
 
@@ -179,7 +181,7 @@ def main():
                            max_results=1000,
                            sort_by='submittedDate',
                            iterative=False)
-    print(articles)
+
     results = search_keyword(articles, keywords, score_threshold)
 
     slack_id = os.getenv("SLACK_ID") or args.slack_id
