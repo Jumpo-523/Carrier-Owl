@@ -100,6 +100,11 @@ def notify(results: list, slack_id: str, line_token: str) -> None:
                f'\n {star}'
 
         send2app(text, slack_id, line_token)
+    
+    # 多すぎてよくわからんから、タイトル一覧表示できるようにする。
+    if len(results) > 0:
+        summary_text = "【タイトル一覧】\n"+ "\n".join([f"{ind} : {r.title}" for ind, r in enumerate(results)])
+        send2app(summary_text, slack_id, line_token)
 
 
 def get_translated_text(from_lang: str, to_lang: str, from_text: str) -> str:
