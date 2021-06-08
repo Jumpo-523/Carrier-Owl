@@ -7,20 +7,20 @@ keywords:
     resnet: 3
     health: 10
     anomaly detection: 3
-    sound: 1
-    audio: 1
-    sound feature: 3
-    audio feature: 3
-    noise removal: 2
-    spectrogram: 3
-    partial label: 4
+#     sound: 1
+#     audio: 1
+#     sound feature: 3
+#     audio feature: 3
+#     noise removal: 2
+#     spectrogram: 3
+#     partial label: 4
     transformer: 5
-    gan: 10
+#     gan: 10
     domain shift: 2
     nlp: 5
     partial label: 2
-    sentiment: 1
+#     sentiment: 1
     attention: 12
 
 # 通知の閾値
-score_threshold: 4
+score_threshold: 5
